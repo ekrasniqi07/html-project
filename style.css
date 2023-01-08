@@ -1,0 +1,196 @@
+.Titulli{
+    font-family: 'Courgette', cursive;
+    background-color:black;
+    color: white;
+    
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+nav{
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+ul{
+
+}
+
+ul li{
+list-style: none;
+display: inline-block;
+line-height: 100px;
+float: right;
+margin-top: -30px;
+}
+
+ul li a{
+    display: block;
+    text-decoration: none;;
+    font-size: 14px;
+    font-family: arial;
+    color: #1e1e1e;
+    padding: 0 20px;
+    color: rgb(252, 242, 242);
+}
+ul li a:hover {
+    color: rgb(204, 114, 114);
+}
+.container{
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    background:beige;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(-250px);
+}
+.container .head{
+    color: white;
+    font-weight: bold;
+    padding: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    background: linear-gradient(30deg,#818381,#000000);
+}
+ol{
+    width: 100%;
+    list-style: none;
+
+}
+ol li{
+    display: block;
+    width: 100%;
+}
+ol li a{
+    color: rgb(14, 56, 30);
+    padding: 15px 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: 0.3s;
+    overflow: hidden;
+    text-transform: capitalize;
+}
+ol li a i{
+    width: 70px;
+    font-size: 25px;
+    text-align: center;
+    padding-left: 30px;
+}
+ol li:hover a{
+    background: rgb(223, 116, 116);
+    color:#1f1d1d;
+    letter-spacing: 5px;
+}
+input {
+    visibility: hidden;
+    display: none;
+}
+span{
+    position: absolute;
+    right: -40px;
+    top: 10px;
+    font-size: 50px;
+    border-radius: 60px;
+    color: #fff;
+    padding: 15px 20px;
+    cursor:pointer;
+    background: #000;
+
+}
+#bars{
+    background: rgb(1, 8, 2);
+}
+#check:checked ~ .container{
+    transform: translate(0);
+}
+.hero{
+  background-image: url(aster.jpg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+  height: 600px;
+}
+.title{
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    font-size: 120px;
+    -webkit-text-stroke: 1px #000;
+    color: transparent;
+    border-radius: 10px;
+    background-image:linear-gradient(#000, #000);
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    background-position: -750px 0;
+    animation: backcolor 5s linear infinite alternate;
+}
+@keyframes backcolor {
+    100%{
+        background-position: 0 0;
+    }
+}
+.button{
+    text-align: center;
+    margin-top: -200px;
+    
+}
+.btn{
+    border: 1px solid #000;
+    background: #000;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "montserrat";
+    cursor: pointer;
+    margin: 10px;
+    color:pink;
+}
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #000;
+    z-index: -1;
+    transition: 0.8s;
+    top: 0;
+    border-radius:50% 50% 0 0;
+}
+    .btn:hover{
+        color: white;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
