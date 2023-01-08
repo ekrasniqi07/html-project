@@ -27,8 +27,8 @@ li{
 
 	--red: #FE2727;
 	--light-red: #FFD2D2;
-
-    background-image: url("assets/images/kpuc.png");
+	/* background: #efefef; */
+    background-image: url("assets/images/login_background.jpg");
     background-position: center;
     background-size:cover;
 
@@ -62,11 +62,18 @@ body {
 	position: relative;
     background-color;
 }
+.container img {
+	width: 150px;
+	height: 150px;
+	margin-left: 150px;
+	position: absolute;
+	margin-top: -200px;
+}
 form {
 	width: 100%;
 	padding: 28px;
 	border-radius: 12px;
-    background: rgba(190, 241, 248, 0.25);
+    background: #ffffff;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%) scale(.8);
@@ -74,6 +81,8 @@ form {
 	z-index: 100;
 	transition: all .3s ease;
 	transition-delay: 0s;
+	box-shadow: 0px 0px 40px 3px black;
+
 }
 form.active {
 	transform: translateY(-50%);
@@ -82,7 +91,7 @@ form.active {
 	transition-delay: .3s;
 }
 .title {
-	font-size: 24px;
+	font-size: 30px;
 	font-weight: 600;
 	margin-bottom: 20px;
 }
@@ -168,4 +177,10 @@ form.active {
 }
 .btn-submit:hover {
 	background: var(--dark-blue);
+}
+
+.backhomefromlogin {
+	position: fixed;
+	margin-top: -50px;
+	margin-left: -70px;
 }
