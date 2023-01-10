@@ -1,0 +1,248 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Comfortaa', cursive;
+}
+
+.header {
+    min-height: 10vh;
+    width: 100%;
+    background-color: #000;
+    position: absolute;
+}
+.logo {
+    max-height: 90px;
+    float: left;
+}
+
+#header {
+    display: flex;
+    position: sticky;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+.navigation {
+    flex: 1;
+    text-align: right;
+    z-index: 2;
+}
+
+.navigation ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.navigation ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 21px;
+}
+
+.navigation ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #325F61;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.navigation ul li:hover::after {
+    width: 100%;
+}
+
+.accbtn {
+    background: #325F61;
+    padding: 14px 24px;
+    border-radius: 3px;
+}
+
+nav .fa {
+    display: none;
+}
+
+.home-bg {
+
+}
+
+.home-bg img {
+    filter: brightness(0.4);
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.bgtitle {
+    color: #fff;
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-size: 55px;
+}
+
+.btnshop {
+    position: absolute;
+    top: 65%;
+    left: 15%;
+    background-color: #325F61;
+    color: #fff;
+    font-size: 21px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btnshop:hover {
+    font-weight: 600;
+    padding: 14px 26px;
+    font-size: 23px;
+    animation: zoom;
+    color: #325F61;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+.lm-home {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.lmh2{
+    font-size: 48px;
+    font-weight: 600;
+}
+
+p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.learn-more {
+    flex-basis: 31%;
+    background: #325F61;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.learn-more:hover {
+    box-shadow: 0 0 20px 0px rgba(25, 25, 25, 0.8);
+    transition: 0.3s;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.footer {
+    width: 100%;
+    bottom: 0;
+    background-color: #000;
+    justify-content: space-between;
+    display: inline-block;
+    position: relative;
+}
+
+.copyright {
+    float: left;
+    margin: 0 13px;
+}
+
+.icons .fa {
+    float: right;
+    margin: 0 15px;
+    cursor: pointer;
+    padding: 25px 0;
+}
+
+
+@media(max-width: 700px){
+    .logo {
+        max-height: 60px;
+        position: relative;
+        left: 50%;
+    }
+    .header {
+        min-height: 8vh;
+    }
+    .navigation ul li {
+        display: block;
+    }
+    .navigation {
+        position: absolute;
+        background: #325F61;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        transition: 0.8s;
+        z-index: 2;
+    }
+    .bgtitle {
+        z-index: -1;
+    }
+    .home-bg img {
+        z-index: -1;
+    }
+    .accbtn {
+        background: none;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .navigation ul {
+        padding: 30px;
+    }
+    .btnshop {
+        top: 90%;
+        left: 25%;
+        transition: 0.8s;
+    }
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media(max-width: 640px) {
+    .btnshop {
+
+    }
+    .bgtitle {
+        font-size: 45px;
+    }
+    .btnshop {
+        font-size: 17px;
+        padding: 9px 20px;
+    }
+}

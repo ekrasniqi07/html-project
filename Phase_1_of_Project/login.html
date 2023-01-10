@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="assets/login.css">
+	<title>Login/Register - Wear&Go</title>
+</head>
+<body>
+	<div class="container">
+
+		<!-- Login Form -->
+
+		<form action="#" class="login active">
+			<img src="assets/images/loginicon.png">
+			<div id="Home1">
+				<h2 class="title">Login to Your Account</h2>
+		</div>
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<div class="input-group">
+					<input type="email" id="email" placeholder="Email address">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="password">Password:</label>
+				<div class="input-group">
+					<input type="password" pattern=".{8,}" id="password" placeholder="Your password">
+				</div>
+				<span class="help-text">Your password must contain at least 8 characters</span>
+			</div>
+			<button type="submit" class="btn-submit">Log in</button>
+			<a href="#">Forgot password?</a>
+			<p>Don't have an account?. <a href="#" onclick="switchForm('register', event)">Register</a></p>
+			<button class="gobackbtn"><a href="index.html">Go Back Home</a></button>
+		</form>
+
+		<!-- Register Form -->
+
+		<form action="#" class="register">
+			<img src="assets/images/loginicon.png">
+			<div class="Home2">
+				<h2 class="title">Register a New Account</h2>
+			</div> 
+			<div class="form-group">
+				<label for="email">Email:</label>
+				<div class="input-group">
+					<input type="email" id="email" placeholder="Email address">
+				</div>
+			</div>
+			<div class="form-group">
+				<label for="password">Password:</label>
+				<div class="input-group">
+					<input type="password" pattern=".{8,}" id="password" placeholder="Your password">
+				</div>
+				<span class="help-text">Your password must contain at least 8 characters</span>
+			</div>
+			<div class="form-group">
+				<label for="confirm-pass">Confirm password</label>
+				<div class="input-group">
+					<input type="password" id="confirm-pass" placeholder="Enter password again">
+				</div>
+				<span class="help-text">Confirm password must be same with password</span>
+			</div>
+			<button type="submit" class="btn-submit">Register</button>
+			<p>You already have an account? <a href="#" onclick="switchForm('login', event)">Login</a></p>
+			<button class="gobackbtn"><a href="index.html">Go Back Home</a></button>
+		</form>
+	</div>
+	<script src="assets/loginjs.js"></script>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="assets/shop.css">
+   <link rel="stylesheet" href="assets/style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Wear&Go</title>
+</head>
+<body>
+
+        <section class="header">
+        <nav id="header">
+            <a href="index.html"><img src="assets/images/logo.png" class="logo"></a>
+            <div class="navigation" id="navLinks">
+                <i class="fa fa-times fa-inverse" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li class="accbtn"><a href="login.html">Account</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!--shop-->
+    <section class="shop container">
+            <h2 class="selection-title">Products</h2>
+            <button class="filtermobile" id="filterMobile" onclick="showSideBarMenu()">Filter</button>
+            <!--content-->
+            <div class="shop-content">
+                
+                <div class="product-box">
+                    <img src="assets/images/prods/a1.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$20  <p class="offprice">$40</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                  <div class="product-box">
+                    <img src="assets/images/prods/b1.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$45 <p class="offprice">$90</p></span>  
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                  <div class="product-box">
+                    <img src="assets/images/prods/v1.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$100 <p class="offprice">$120</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                  <div class="product-box">
+                    <img src="assets/images/prods/d1.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$30  <p class="offprice">$60</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                  <div class="product-box">
+                    <img src="assets/images/prods/e1.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$25  <p class="offprice">$75</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                  <div class="product-box">
+                    <img src="assets/images/prods/v10.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$22  <p class="offprice">$30</p></span> 
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                 <div class="product-box">
+                    <img src="assets/images/prods/v5.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$99,50  <p class="offprice">$150</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                 <div class="product-box">
+                    <img src="assets/images/prods/v2.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$35  <p class="offprice">$50</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                 <div class="product-box">
+                    <img src="assets/images/prods/v7.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$20  <p class="offprice">$40</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                 <div class="product-box">
+                    <img src="assets/images/prods/v9.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$65  <p class="offprice">$90</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                 <div class="product-box">
+                    <img src="assets/images/prods/v6.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$30 <p class="offprice">$40</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                 <div class="product-box">
+                    <img src="assets/images/prods/v3.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$150 <p class="offprice">$200</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                 <div class="product-box">
+                    <img src="assets/images/prods/v4.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$30 <p class="offprice">$50</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                 <div class="product-box">
+                    <img src="assets/images/prods/v8.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$27 <p class="offprice">$35</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                 <div class="product-box">
+                    <img src="assets/images/prods/v11.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$45 <p class="offprice">$60</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                 <div class="product-box">
+                    <img src="assets/images/prods/c1.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$35 <p class="offprice">$40</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                 <div class="product-box">
+                    <img src="assets/images/prods/z1.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$15 <p class="offprice">$30</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                 <div class="product-box">
+                    <img src="assets/images/prods/z2.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$8 <p class="offprice">$12</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+                 <div class="product-box">
+                    <img src="assets/images/prods/z3.jpg" alt="" class="product-img">
+                    <h2 class="Product-title">Cream color Sweater</h2>
+                    <span class="price">$25 <p class="offprice">$45</p></span>
+                    <i class='bx bxs-shopping-bag add-cart'></i>
+                </div>
+            </div>
+    </section>
+        <div class="sidebar">
+            <div class="cat-headings">
+                <h4 onclick="window.location.href='shop.html'" class="topcategory" style="margin-bottom: 15px;">All Categories</h4>
+
+                <h4 onclick="window.location.href='prods/shop-mens.html'" class="category" style="margin-bottom: 10px;">For Men</h4>
+                    <h5 onclick="window.location.href='prods/shop-mens-jeans.html'" class="subcategory" style="margin-bottom: 10px;">Jeans</h5>
+                    <h5 onclick="window.location.href='prods/shop-mens-pants.html'" class="subcategory" style="margin-bottom: 10px;">Pants</h5>
+                    <h5 onclick="window.location.href='prods/shop-mens-shirts-tshirts.html'" class="subcategory" style="margin-bottom: 10px;">Shirts & T-Shirts</h5>
+                    <h5 onclick="window.location.href='prods/shop-mens-hoodies-sweatshirts.html'" class="subcategory" style="margin-bottom: 10px;">Hoodies & Sweatshirts</h5>
+                    <h5 onclick="window.location.href='prods/shop-mens-shoes.html'" class="subcategory" style="margin-bottom: 10px;">Shoes</h5>
+                    <h5 onclick="window.location.href='prods/shop-mens-wristwatches.html'" class="subcategory" style="margin-bottom: 15px;">Wristwatches</h5>
+                <h4 onclick="window.location.href='prods/shop-womens.html'" class="category" style="margin-bottom: 10px;">For Women</h4>
+                    <h5 onclick="window.location.href='prods/shop-womens-jeans.html'" class="subcategory" style="margin-bottom: 10px;">Jeans</h5>
+                    <h5 onclick="window.location.href='prods/shop-womens-pants.html'" class="subcategory" style="margin-bottom: 10px;">Pants</h5>
+                    <h5 onclick="window.location.href='prods/shop-womens-shirts-tshirts.html'" class="subcategory" style="margin-bottom: 10px;">Shirts & T-Shirts</h5>
+                    <h5 onclick="window.location.href='prods/shop-womens-jackets.html'" class="subcategory" style="margin-bottom: 10px;">Jackets</h5>
+                    <h5 onclick="window.location.href='prods/shop-womens-dresses.html'" class="subcategory" style="margin-bottom: 10px;">Dresses</h5>
+                    <h5 onclick="window.location.href='prods/shop-womens-hoodies-sweatshirts.html'" class="subcategory">Hoodies & Sweatshirts</h5>
+            </div>
+        </div>
+        <script src="assets/main.js"></script>
+</body>
+</html>
