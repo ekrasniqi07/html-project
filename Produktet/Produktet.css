@@ -110,3 +110,7 @@ section{
     font-size: 1.8rem;
     cursor: pointer;
 }
+.offprice{
+    text-decoration: line-through;
+    color: #325f61;
+}
